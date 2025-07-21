@@ -1,12 +1,38 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🛒 Product Purchase + Payment Flow (Frontend Only)
 
-Currently, two official plugins are available:
+This is a frontend simulation of a product purchase flow with Razorpay-style payment simulation, created using React, Tailwind CSS, and React Router.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔥 Features
+- Product page with image & price
+- User data collection form (Name, Age, Mobile, Email)
+- Simulated payment using a loading state and random success/failure
+- Redirect to success/failure page
+- Clean, responsive, modern UI
 
-## Expanding the ESLint configuration
+## 📷 Screenshots
+- `Product Page`: shows product & form
+- `Loading State`: after clicking Buy Now
+- `Success Page`: shows user info and order ID
+- `Failure Page`: allows retry
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Run Locally
+
+```bash
+# 1. Clone this repo or create new project using Vite
+npm create vite@latest product-purchase-flow -- --template react
+cd product-purchase-flow
+
+# 2. Install dependencies
+npm install
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm install react-router-dom
+
+# 3. Add Tailwind config
+# (as shown in tailwind.config.js above)
+
+# 4. Paste source code inside /src folder
+
+# 5. Run the dev server
+npm run dev
